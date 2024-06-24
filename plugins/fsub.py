@@ -109,8 +109,8 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
             [
                 InlineKeyboardButton(" 🔄 Try Again 🔄 ", callback_data=f"{mode}#{file_id}")
             ],
-            [   InlineKeyboardButton("Update", url="https://t.me/VJ_Botz"),
-                InlineKeyboardButton("YouTube", url="https://youtube.com/@Tech_VJ")
+            [   InlineKeyboardButton("Movie Group", url="https://t.me/tg_moviesjunction"),
+                InlineKeyboardButton("Movie Updates", url="https://t.me/KM_Updates")
             ]
         ]
         

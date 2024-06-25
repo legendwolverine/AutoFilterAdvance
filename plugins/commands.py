@@ -24,8 +24,8 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton("Updates", url="https://t.me/KM_Updates"),
-                InlineKeyboardButton("🍿 Movie Group 🍿", url="https://t.me/tg_moviesjunction")
+                InlineKeyboardButton("🔥 𝗠𝗼𝘃𝗶𝗲 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/KM_Updates"),
+                InlineKeyboardButton("👾 𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 👾", url="https://t.me/tg_moviesjunction")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -41,9 +41,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝 Movie Updates Channel 💗', url=f'http://t.me/KM_Updates')
+            InlineKeyboardButton('🔥 𝗠𝗼𝘃𝗶𝗲 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥', url=f'http://t.me/KM_Updates')
             ],[
-            InlineKeyboardButton('♻️ Movie Group ♻️', url=f'https://t.me/tg_moviesjunction')
+            InlineKeyboardButton('👾 𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 👾', url=f'https://t.me/tg_moviesjunction')
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
             InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
@@ -63,9 +63,9 @@ async def start(client, message):
             return
 
         buttons = [[
-            InlineKeyboardButton('💝 Movie Updates Channel 💗', url=f'https://t.me/KM_Updates')
+            InlineKeyboardButton('🔥 𝗠𝗼𝘃𝗶𝗲 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥', url=f'https://t.me/KM_Updates')
             ],[
-            InlineKeyboardButton('♻️ Movie Group ♻️', url=f'https://t.me/tg_moviesjunction')
+            InlineKeyboardButton('👾 𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 👾', url=f'https://t.me/tg_moviesjunction')
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
             InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
@@ -131,7 +131,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     
-                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🍿 Movie Updates 🍿", url="https://t.me/KM_Updates")] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🔥 𝗠𝗼𝘃𝗶𝗲 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/KM_Updates")] ] ),
                     
                     protect_content=msg.get('protect', False),
                     )
@@ -228,7 +228,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         
-        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🍿 Movie Updates 🍿", url="https://t.me/KM_Updates")] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🔥 𝗠𝗼𝘃𝗶𝗲 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🔥", url="https://t.me/KM_Updates")] ] ),
         
         protect_content=True if pre == 'filep' else False,
         )
